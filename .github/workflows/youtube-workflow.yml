@@ -8,6 +8,8 @@ on:
 jobs:
   update-readme-with-youtube:
     name: Update this repo's README with latest videos from YouTube
+    permissions:
+      contents: write       # commit the updated README
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
